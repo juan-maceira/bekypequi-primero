@@ -552,60 +552,6 @@ footer {
         line-height: 30px;    
     }
 
-    .main-playlist h2{
-        text-align: center;
-        font-size: 40Px;
-        padding-top: 30px; 
-    }
-
-    .main-canciones {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 7%;
-    }
-
-    .main-canciones h2 {
-        text-align: center;
-        font-size: 40Px;
-        padding-top: 30px;
-    }
-
-    .main-contacto h2 {
-        font-size: 40Px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: center;
-    }
-
-    .main-contacto form {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between ;
-        align-items: center;
-    }
-
-    .contenedor-playlist {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;   
-    }
-
-
-    .caja-playlist {
-        height: 100vh;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-top: 5%;
-        margin-bottom: 3%;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;       
-    }
-
     .caja-playlist iframe {
         height: 80vh;
         width: 100%;
