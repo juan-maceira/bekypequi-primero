@@ -552,32 +552,6 @@ footer {
         line-height: 30px;    
     }
 
-    .caja-playlist iframe {
-        height: 80vh;
-        width: 100%;
-    }
-
-    .caja-playlist h3 {
-        margin-top: 3%;
-        font-weight: 400;
-        font-size: 40px;
-    }
-
-    .caja-playlist h3 a {
-        color: white;
-    }
-
-
-    .caja-canciones {
-        padding: 30px;
-        
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;   
-    }
-
     .caja-canciones iframe {
         width: 100%;
         height: 45vh;
