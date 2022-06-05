@@ -1,0 +1,2134 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;900&family=Roboto:ital,wght@0,300;0,700;0,900;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(224, 224, 224);
+    list-style-type: none;
+    font-family:'Heebo', 'Roboto', sans-serif;
+    text-decoration: none;   
+}
+
+
+
+.logo-bekypequi {
+    border-radius: 50%;
+    transition: all 0.3s ease;              
+}
+
+.logo-bekypequi:hover {
+    width: 210px;
+    height: 210px;
+}
+
+.enviar {
+    background-color: #443264;
+    grid-area: enviar;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.enviar a {
+    padding: 5%;
+    color: white;
+    font-size: 1.3rem;
+    background-color: orangered;
+    border-radius: 5px;
+    transition: all 0.3s ease;  
+}
+
+.enviar a:hover {
+    padding: 6%;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #673ab7;
+    box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*###### DESKTOP 1246PX ###########*/
+
+
+@media (min-width: 1246px) {
+    body {
+        background-color: #633ea3;    
+        display: grid;
+        grid-template-areas:
+        "enviar navegador navegador" 
+        "header header header"
+        "main main main" 
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20vh 80vh auto 25vh;
+    }
+
+    .navegador {
+        background-color: #443264;
+        grid-area: navegador;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly; 
+        width: 70%;   
+    }
+
+    .navegador ul li {
+        margin: 5%;   
+    }
+    
+    .navegador ul li a {
+        font-weight: 300;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;            
+    }
+
+    .navegador ul li a:hover { 
+        padding: 13px;
+        border-radius: 5px;
+        background-color: #613da0;
+        text-shadow: none; 
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    /************* HEADER **************/
+
+
+    header { 
+        background-image: linear-gradient(to bottom, #443264 3%, #633ea3 100%); 
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;    
+    }
+
+
+    h1 {
+        font-weight: 500;
+        font-size:60px;     
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 35px;       
+    }
+
+    .logo-bekypequi {
+        border-radius: 50%;
+        transition: all 0.3s ease;              
+    }
+
+    .logo-bekypequi:hover {
+        width: 210px;
+        height: 210px;
+    }
+
+    .logo-spotify {
+        background-color: orangered;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: all 0.3s ease; 
+    }
+
+    .logo-spotify:hover {
+        background-color: #673ab7;
+        padding: 15px 35px;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67); 
+    }
+
+
+
+
+/********** MAIN **********/
+
+    main {
+        grid-area: main;
+    }
+
+    .main-inicio {
+        margin-top: 7vh;
+        margin-bottom:12vh;
+    }
+
+    .main-inicio P {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main-nosotros {
+        border: solid 1px;
+        border-radius: 15px;
+        border-color: rgb(58, 57, 57);
+        margin: 5% 10%;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    .main-nosotros h2{
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 30px;
+        font-weight: 400;    
+    }
+
+    .main-servicios {
+        display: grid;
+        grid-template-areas: 
+        "titulo-promocion texto-promocion"
+        "imagen-promocion texto-promocion"
+        "enviar-dos enviar-dos"
+        "texto-curador titulo-curador"
+        "texto-curador imagen-curador";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50vh 50vh 20vh 55vh 50vh;
+        margin-left: 5%;
+        margin-right: 5%;
+             
+    }
+
+    .titulo-servicios {
+        grid-area: titulo-servicios;
+        text-align: center;
+    }
+
+    .titulo-promocion {
+        font-size:80px;
+        grid-area: titulo-promocion;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+           
+    }
+
+
+    .texto-promocion {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        font-weight: 400;
+        font-size: 23px;
+        text-align: justify;
+        letter-spacing:1.5px; 
+        line-height: 37px;
+        padding-left: 20px;
+        color: rgb(224, 224, 224);
+        grid-area: texto-promocion;
+        
+    }
+
+    .imagen-promocion {
+        grid-area: imagen-promocion;
+        display: flex;
+    }
+
+    .imagen-promocion img {
+        width: 100%;
+        
+    }
+
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: flex-end;
+    }
+
+    .enviar-dos a {
+        padding: 2%;
+        color: white;
+        font-size: 1.3rem;
+        background-color: orangered;
+        border-radius: 5px;
+        transition: all 0.3s ease; 
+    }
+
+    .enviar-dos a:hover {
+        padding: 2.5%;
+        font-size: 1.4rem;
+        color: white;
+        background-color: #673ab7;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);  
+    }
+
+    .titulo-curador {
+        font-size: 80px;
+        grid-area: titulo-curador;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:flex-end;
+        
+    }
+
+   .imagen-curador {
+        grid-area: imagen-curador;
+        width: 100%;
+    }
+
+    .texto-curador {
+        font-weight: 400;
+        font-size: 23px;
+        text-align: justify;
+        letter-spacing:1.5px; 
+        line-height: 37px;
+        padding-right: 20px;
+        color: rgb(224, 224, 224);
+        grid-area: texto-curador;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .main-playlist {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: 70%;
+        background-attachment: fixed;
+        margin-bottom: 7%;
+    }
+
+    .main-playlist h2{
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 30px; 
+    }
+
+    .main-canciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 7%;
+    }
+
+    .main-canciones h2 {
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 30px;
+    }
+
+    .main-contacto h2 {
+        font-size: 40Px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-contacto form {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        align-items: center;
+    }
+
+    .contenedor-playlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;   
+    }
+
+
+    .caja-playlist {
+        height: 100vh;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;       
+    }
+
+    .caja-playlist iframe {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .caja-playlist h3 {
+        margin-top: 3%;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    .caja-playlist h3 a {
+        color: white;
+    }
+
+
+    .caja-canciones {
+        padding: 30px;
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;   
+    }
+
+    .caja-canciones iframe {
+        width: 100%;
+        height: 45vh;
+        border-radius: 12px;
+    }
+
+    .indice-playlist ul li a {
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 30px;
+        padding: 3% 6%; 
+        border-style: solid;
+        border-width: 1Px;
+        transition: all 0.5s ease;          
+    }
+
+    .indice-playlist ul li a:hover {
+        background-color: rgb(23, 139, 23);
+        border-color: white; 
+        text-shadow: 3px 3px 3px black;
+        padding:4% 7%;   
+    }
+
+
+    .indice-playlist ul li { 
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+    .indice-playlist ul {
+        display: grid; 
+        grid-template-columns: repeat(3, 20%);
+        justify-content: center;
+        grid-column-gap: 30px;
+    }
+
+
+    .texto-canciones {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 35px;
+        margin: 20px;
+        margin-top: 10px;
+        padding: 2%;
+    }
+
+
+
+    /************* FOOTER *****************/
+
+    /* ETIQUETAS*/
+
+    footer {
+        background-image: linear-gradient(to top, #57388b, #633ea3);   
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;      
+        padding-top: 10px;
+        padding-bottom: 10px;
+        grid-area: footer;      
+    }
+
+
+    /* CLASES */
+
+    .volver-arriba a {
+        color: white;
+        font-weight: 200;
+    }
+
+    .volver-arriba a:hover {
+        color: black; 
+    }
+
+    .redes-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .redes-footer a {
+        margin: 10px;
+    }
+
+    .navegador-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        margin-top: 5px;  
+    }
+
+    .navegador-footer span a {
+        color: white;
+        font-weight: 100;
+        font-size: 15px;
+        border-left: 1px solid white;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all 0.5s ease;  
+    }
+
+    .navegador-footer span a:hover {
+        padding: 15px;
+    }
+
+
+}
+
+
+
+
+
+    /*############### DESKTOP 1024 ##################*/
+
+@media (min-width: 1024px) and (max-width: 1245px) {
+    body {
+        background-color: #633ea3;    
+        display: grid;
+        grid-template-areas:
+        "enviar navegador navegador" 
+        "header header header"
+        "main main main" 
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20vh 80vh auto 25vh;
+    }
+    
+    .navegador {
+        background-color: #443264;
+        grid-area: navegador;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly; 
+        width: 70%;   
+    }
+
+    .navegador ul li {
+        margin: 3%;   
+    }
+    
+    .navegador ul li a {
+        font-weight: 300;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;            
+    }
+
+    .navegador ul li a:hover { 
+        padding: 13px;
+        border-radius: 5px;
+        background-color: #613da0;
+        text-shadow: none; 
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+
+/************* HEADER **************/
+
+
+    header { 
+        background-image: linear-gradient(to bottom, #443264 3%, #633ea3 100%); 
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;    
+    }
+
+
+    h1 {
+        font-weight: 500;
+        font-size:60px;     
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 35px;       
+    }
+
+    .logo-bekypequi {
+        border-radius: 50%;
+        transition: all 0.3s ease;              
+    }
+
+    .logo-bekypequi:hover {
+        width: 210px;
+        height: 210px;
+    }
+
+    .logo-spotify {
+        background-color: orangered;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: all 0.3s ease; 
+    }
+
+    .logo-spotify:hover {
+        background-color: #673ab7;
+        padding: 15px 35px;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67); 
+    }
+
+
+
+
+/********** MAIN **********/
+
+    main {
+        grid-area: main;
+    }
+
+    .main-inicio {
+        margin-top: 7vh;
+        margin-bottom:12vh;
+    }
+
+    .main-inicio P {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main-nosotros {
+        border: solid 1px;
+        border-radius: 15px;
+        border-color: rgb(58, 57, 57);
+        margin: 5% 10%;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    .main-nosotros h2{
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 30px;
+        font-weight: 400;    
+    }
+
+    .main-servicios {
+        display: grid;
+        grid-template-areas: 
+        "titulo-promocion texto-promocion"
+        "imagen-promocion texto-promocion"
+        "enviar-dos enviar-dos"
+        "texto-curador titulo-curador"
+        "texto-curador imagen-curador";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30vh 40vh 20vh 40vh 40vh;
+        margin: 5% 5%;        
+    }
+
+    .titulo-servicios {
+        grid-area: titulo-servicios;
+        text-align: center;
+    }
+
+    .titulo-promocion {
+        font-size:60px;
+        letter-spacing:5px;
+        grid-area: titulo-promocion;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+           
+    }
+
+
+    .texto-promocion {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: justify;
+        letter-spacing:1px; 
+        line-height: 30px;
+        padding-left: 20px;
+        color: rgb(224, 224, 224);
+        grid-area: texto-promocion;
+        
+    }
+
+    .imagen-promocion {
+        grid-area: imagen-promocion;
+        display: flex;
+    }
+
+    .imagen-promocion img {
+        width: 100%;
+        
+    }
+
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .enviar-dos a {
+        padding: 3%;
+        color: white;
+        font-size: 1.3rem;
+        background-color: orangered;
+        border-radius: 5px;
+        transition: all 0.3s ease; 
+    }
+
+    .enviar-dos a:hover {
+        padding: 4%;
+        font-size: 1.4rem;
+        color: white;
+        background-color: #673ab7;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);  
+    }
+
+    .titulo-curador {
+        font-size: 60px;
+        grid-area: titulo-curador;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:flex-end;
+        
+    }
+
+   .imagen-curador {
+        grid-area: imagen-curador;
+        width: 100%;
+    }
+
+    .texto-curador {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: justify;
+        letter-spacing:1px; 
+        line-height: 30px;
+        padding-right: 20px;
+        color: rgb(224, 224, 224);
+        grid-area: texto-curador;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .main-playlist {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: 70%;
+        background-attachment: fixed;
+        margin-bottom: 7%;
+    }
+
+    .main-playlist h2{
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 30px; 
+    }
+
+    .main-canciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 7%;
+    }
+
+    .main-canciones h2 {
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 30px;
+    }
+
+    .main-contacto h2 {
+        font-size: 40Px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-contacto form {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        align-items: center;
+    }
+
+    .contenedor-playlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;   
+    }
+
+
+    .caja-playlist {
+        height: 100vh;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;       
+    }
+
+    .caja-playlist iframe {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .caja-playlist h3 {
+        margin-top: 3%;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    .caja-playlist h3 a {
+        color: white;
+    }
+
+
+    .caja-canciones {
+        padding: 30px;
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;   
+    }
+
+    .caja-canciones iframe {
+        width: 100%;
+        height: 45vh;
+        border-radius: 12px;
+    }
+
+    .indice-playlist ul li a {
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 30px;
+        padding: 3% 6%; 
+        border-style: solid;
+        border-width: 1Px;
+        transition: all 0.5s ease;          
+    }
+
+    .indice-playlist ul li a:hover {
+        background-color: rgb(23, 139, 23);
+        border-color: white; 
+        text-shadow: 3px 3px 3px black;
+        padding:4% 7%;   
+    }
+
+
+    .indice-playlist ul li { 
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+    .indice-playlist ul {
+        display: grid; 
+        grid-template-columns: repeat(3, 20%);
+        justify-content: center;
+        grid-column-gap: 30px;
+    }
+
+
+    .texto-canciones {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 35px;
+        margin: 20px;
+        margin-top: 10px;
+        padding: 2%;
+    }
+
+
+
+    /************* FOOTER *****************/
+
+    /* ETIQUETAS*/
+
+    footer {
+        background-image: linear-gradient(to top, #57388b, #633ea3);   
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;      
+        padding-top: 10px;
+        padding-bottom: 10px;
+        grid-area: footer;      
+    }
+
+
+    /* CLASES */
+
+    .volver-arriba a {
+        color: white;
+        font-weight: 200;
+    }
+
+    .volver-arriba a:hover {
+        color: black; 
+    }
+
+    .redes-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .redes-footer a {
+        margin: 10px;
+    }
+
+    .navegador-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        margin-top: 5px;  
+    }
+
+    .navegador-footer span a {
+        color: white;
+        font-weight: 100;
+        font-size: 15px;
+        border-left: 1px solid white;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all 0.5s ease;  
+    }
+
+    .navegador-footer span a:hover {
+        padding: 15px;
+    }
+}    
+
+
+
+
+
+
+
+
+
+
+/*############# TABLET 768 / 1023  ##################*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {    
+        background-color: #633ea3;
+        display: grid;
+        grid-template-areas:
+        "navegador"
+        "enviar" 
+        "header"
+        "main" 
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 15vh 70vh auto 25vh; 
+    }
+
+    
+
+    .enviar a {
+        padding: 20px;
+        color: white;
+        font-size: 1.4rem;
+        background-color: orangered;
+        border-radius: 5px;
+        transition: all 0.3s ease;  
+    }
+
+    .enviar a:hover {
+        padding: 27px;
+        font-size: 1.5rem;
+        color: white;
+        background-color: #673ab7;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);    
+    }
+ 
+    .navegador {
+        background-color: #443264;
+        grid-area: navegador;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;    
+    }
+
+    .navegador ul li {
+        margin: 4%;   
+    }
+    
+    .navegador ul li a {
+        font-weight: 300;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;            
+    }
+
+    .navegador ul li a:hover { 
+        padding: 13px;
+        border-radius: 5px;
+        background-color: #673ab7;
+        text-shadow: none; 
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+
+/************* HEADER **************/
+
+    header { 
+        background-image: linear-gradient(to bottom, #443264 5%, #633ea3 100%);
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;    
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size:60px;     
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 35px;       
+    }
+
+    
+
+    .logo-spotify {
+        background-color: orangered;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: all 0.3s ease; 
+    }
+
+    .logo-spotify:hover {
+        background-color: #673ab7;
+        padding: 15px 35px;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67); 
+    }
+
+
+/********** MAIN **********/
+
+    main {
+        grid-area: main;
+    }
+
+    .main-inicio {
+        margin-top: 7vh;
+        margin-bottom:12vh;
+    }
+
+    .main-inicio P {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .main-nosotros {
+        border: solid 1px;
+        border-radius: 15px;
+        border-color: rgb(224, 224, 224);
+        margin: 7% 7%;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    .main-nosotros h2{
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 30px;
+        font-weight: 400;     
+    }
+
+    .main-servicios {
+        border: solid 2px;
+        border-radius: 15px;
+        border-color: rgb(224, 224, 224);
+        margin: 7% 7%;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    .main-servicios H2 {
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 15vh;
+        font-weight: 400;       
+    }
+
+    .main-playlist {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: 70%;
+        background-attachment: fixed;
+    }
+
+    .main-playlist h2{
+        text-align: center;
+        font-size: 40Px;
+        padding-top: 30px; 
+    }
+
+    .main-canciones {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-canciones h2 {
+        text-align: center;
+        font-size: 30Px;
+        padding-top: 30px;
+    }
+
+    .main-contacto h2 {
+        font-size: 40Px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-contacto form {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        align-items: center;
+    }
+    
+
+    .contenedor-playlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;   
+    }
+
+    .caja-playlist {
+        height: 100vh;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;           
+    }
+
+    .caja-playlist iframe {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .caja-playlist h3 {
+        margin-top: 3%;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    .caja-playlist h3 a {
+        color: white;
+    }
+
+    .caja-texto {       
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing:3px; 
+        line-height: 50px;
+        padding: 25px 50px;
+        display: flex; 
+        flex-direction: column;
+        justify-content:space-between    
+    }
+
+    .caja-texto p {
+        margin: 10px;
+        color: rgb(211, 211, 211);
+    }
+
+
+    .caja-canciones {
+        padding: 30px;       
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;       
+    }
+
+    .caja-canciones iframe {
+        width: 100%;
+        height: 45vh;
+        border-radius: 12px;
+    }
+
+    .indice-playlist ul li a {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 400;
+        border-radius: 30px;
+        padding: 3% 6%; 
+        border-style: solid;
+        border-width: 1Px;
+        transition: all 0.5s ease;          
+    }
+
+    .indice-playlist ul li a:hover {
+        background-color: rgb(23, 139, 23);
+        border-color: white; 
+        text-shadow: 3px 3px 3px black;
+        padding:4% 7%;   
+    }
+
+
+    .indice-playlist ul li { 
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+    .indice-playlist ul {
+        display: grid; 
+        grid-template-columns: repeat(2, 25%);
+        justify-content: center;
+        grid-column-gap: 30px;
+    }
+
+
+    .texto-canciones {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 25px;
+        margin: 20px;
+        margin-top: 0px;
+        padding: 2%;
+    }
+
+
+    /************* FOOTER *****************/
+
+    /* ETIQUETAS*/
+
+    footer { 
+        background-image: linear-gradient(to top, #57388b, #633ea3);  
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;      
+        background-color: #673ab7;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        grid-area: footer;       
+    }
+
+
+    /* CLASES */
+
+    .volver-arriba a {
+        color: white;
+        font-weight: 200;
+    }
+
+    .volver-arriba a:hover {
+        color: black; 
+    }
+
+    .redes-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .redes-footer a {
+        margin: 10px;
+    }
+
+    .navegador-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        margin-top: 5px;        
+    }
+
+    .navegador-footer span a {
+        color: white;
+        font-weight: 100;
+        font-size: 15px;
+        border-left: 1px solid white;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all 0.5s ease;  
+    }
+
+    .navegador-footer span a:hover {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+/*####################### TABLET 481 / 767 #######################*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {    
+        background-color: #633ea3; 
+        display: grid;
+        grid-template-areas:
+        "navegador enviar"
+        "header header" 
+        "main main" 
+        "footer footer";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows:  30vh 70vh  auto 25vh; 
+    }
+
+   
+ 
+    .navegador {
+        background-color: #443264;
+        grid-area: navegador;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;    
+    }
+
+    .navegador ul li {
+        margin: 2%;   
+    }
+    
+    .navegador ul li a {
+        font-weight: 300;
+        font-size: 1rem;
+        transition: all 0.3s ease;            
+    }
+
+    .navegador ul li a:hover { 
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #673ab7;
+        text-shadow: none; 
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+
+/************* HEADER **************/
+
+    header {
+        background-image: linear-gradient(to bottom, #443264 5%, #633ea3 100%);  
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;    
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size:40px;     
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 25px;       
+    }
+
+    .logo-bekypequi {
+        border-radius: 50%;
+        transition: all 0.3s ease;              
+    }
+
+    .logo-bekypequi:hover {
+        width: 210px;
+        height: 210px;
+    }
+
+    .logo-spotify {
+        background-color: orangered;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: all 0.3s ease; 
+    }
+
+    .logo-spotify:hover {
+        background-color: #673ab7;
+        padding: 15px 35px;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67); 
+    }
+
+
+/********** MAIN **********/
+
+    main {
+        grid-area: main;
+    }
+
+    .main-inicio {
+        margin-top: 7vh;
+        margin-bottom:12vh;
+    }
+
+    .main-inicio P {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .main-nosotros {
+        border: solid 1px;
+        border-radius: 15px;
+        border-color: rgb(224, 224, 224);
+        margin: 7% 7%;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    .main-nosotros h2{
+        text-align: center;
+        font-size: 25Px;
+        padding-top: 30px;
+        font-weight: 400;     
+    }
+
+    .main-servicios {
+        border: solid 2px;
+        border-radius: 15px;
+        border-color: rgb(224, 224, 224);
+        margin: 7% 7%;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    .main-servicios H2 {
+        text-align: center;
+        font-size: 25Px;
+        padding-top: 15vh;
+        font-weight: 400;       
+    }
+
+    .main-playlist {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(../recursos/pexels-dids-1644616.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+
+    .main-playlist h2{
+        text-align: center;
+        font-size: 25Px;
+        padding-top: 30px; 
+    }
+
+    .main-canciones {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-canciones h2 {
+        text-align: center;
+        font-size: 25Px;
+        padding-top: 30px;
+    }
+
+    .main-contacto h2 {
+        font-size: 25Px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-contacto form {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        align-items: center;
+    }
+    
+
+    .contenedor-playlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;   
+    }
+
+    .caja-playlist {
+        height: 100vh;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;           
+    }
+
+    .caja-playlist iframe {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .caja-playlist h3 {
+        margin-top: 3%;
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .caja-playlist h3 a {
+        color: white;
+    }
+
+    .caja-texto {       
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        letter-spacing:3px; 
+        line-height: 25px;
+        padding: 15px 15px;
+        display: flex; 
+        flex-direction: column;
+        justify-content:space-between    
+    }
+
+    .caja-texto p {
+        margin: 10px;
+        color: rgb(211, 211, 211);
+    }
+
+
+    .caja-canciones {
+        padding: 30px;       
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;       
+    }
+
+    .caja-canciones iframe {
+        width: 100%;
+        height: 80px;
+        border-radius: 12px;
+    }
+
+    .indice-playlist ul li a {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 400;
+        border-radius: 30px;
+        padding: 3% 6%; 
+        border-style: solid;
+        border-width: 1Px;
+        transition: all 0.5s ease;          
+    }
+
+    .indice-playlist ul li a:hover {
+        background-color: rgb(23, 139, 23);
+        border-color: white; 
+        text-shadow: 3px 3px 3px black;
+        padding:4% 7%;   
+    }
+
+
+    .indice-playlist ul li { 
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .indice-playlist ul {
+        display: grid; 
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
+        grid-column-gap: 30px;
+    }
+
+
+    .texto-canciones {
+        text-align: center;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 25px;
+        margin: 20px;
+        margin-top: 0px;
+        padding: 2%;
+    }
+
+
+    /************* FOOTER *****************/
+
+    /* ETIQUETAS*/
+
+    footer {
+        background-image: linear-gradient(to top, #57388b, #633ea3);    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;      
+        background-color: #673ab7;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        grid-area: footer;       
+    }
+
+
+    /* CLASES */
+
+    .volver-arriba a {
+        color: white;
+        font-weight: 200;
+        font-size: 13px;
+    }
+
+    .volver-arriba a:hover {
+        color: black; 
+    }
+
+    .redes-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .redes-footer a {
+        margin: 10px;
+    }
+
+    .navegador-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        margin-top: 5px;        
+    }
+
+    .navegador-footer span a {
+        color: white;
+        font-weight: 100;
+        font-size: 10px;
+        border-left: 1px solid white;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: all 0.5s ease;  
+    }
+
+    .navegador-footer span a:hover {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*############## SMARTPHONE 480 ####################*/
+@media (max-width: 480px) {
+    body {    
+        background-color: #633ea3; 
+        display: grid;
+        grid-template-areas:
+        "navegador enviar"
+        "header header" 
+        "main main" 
+        "footer footer";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows:  25vh 60vh auto 25vh; 
+    }
+
+    .enviar {
+        background-color: #443264;
+        grid-area: enviar;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;        
+    }
+
+    .enviar a {
+        padding: 15px;
+        color: white;
+        font-size: 1rem;
+        background-color: orangered;
+        border-radius: 5px;
+        transition: all 0.3s ease;  
+    }
+
+    .enviar a:hover {
+        padding: 20px;
+        font-size: 1.3rem;
+        color: white;
+        background-color: #673ab7;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);    
+    }
+ 
+    .navegador {
+        background-color: #443264;
+        grid-area: navegador;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;    
+    }
+
+    .navegador ul li {
+        margin: 2%;   
+    }
+    
+    .navegador ul li a {
+        font-weight: 300;
+        font-size: 0.8rem;
+        transition: all 0.3s ease;            
+    }
+
+    .navegador ul li a:hover { 
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #673ab7;
+        text-shadow: none; 
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+
+/************* HEADER **************/
+
+    header {
+        background-image: linear-gradient(to bottom, #443264 5%, #633ea3 100%);  
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;    
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size:35px;     
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;       
+    }
+
+    .logo-bekypequi {
+        border-radius: 50%;
+        width: 150PX;
+        height: 150PX; 
+        transition: all 0.3s ease;              
+    }
+
+    .logo-bekypequi:hover {
+        width: 160px;
+        height: 160px;
+    }
+
+    .logo-spotify {
+        background-color: orangered;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: all 0.3s ease; 
+    }
+
+    .logo-spotify:hover {
+        background-color: #673ab7;
+        padding: 15px 35px;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67); 
+    }
+
+
+/********** MAIN **********/
+
+    main {
+        grid-area: main;
+    }
+
+    .main-inicio {
+        margin-top: 7vh;
+        margin-bottom:12vh;
+    }
+
+    .main-inicio P {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main-nosotros {
+        border: solid 1px;
+        border-radius: 15px;
+        border-color: rgb(224, 224, 224);
+        margin: 3% 3%;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    .main-nosotros h2{
+        text-align: center;
+        font-size: 25Px;
+        padding-top: 7vh;
+        font-weight: 400;     
+    }
+
+    .main-servicios {
+        border: solid 2px;
+        border-radius: 15px;
+        border-color: rgb(224, 224, 224);
+        margin: 2% 3%;
+        box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.67);
+    }
+
+    .main-servicios H2 {
+        text-align: center;
+        font-size: 25Px;
+        padding-top: 7vh;
+        font-weight: 400;       
+    }
+
+    .main-playlist h2{
+        text-align: center;
+        font-size: 25Px;
+        padding-top: 7vh; 
+    }
+
+    .main-canciones {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-canciones h2 {
+        text-align: center;
+        font-size: 25Px;
+        padding-top: 30px;
+    }
+
+    .main-contacto h2 {
+        font-size: 25Px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-contacto form {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        align-items: center;
+    }
+    
+
+    .contenedor-playlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;   
+    }
+
+    .caja-playlist {
+        height: 100vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;           
+    }
+
+    .caja-playlist iframe {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .caja-playlist h3 {
+        margin-top: 3%;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .caja-playlist h3 a {
+        color: white;
+    }
+
+    .caja-texto {       
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing:3px; 
+        line-height: 25px;
+        padding: 10px 10px;
+        display: flex; 
+        flex-direction: column;
+        justify-content:space-between    
+    }
+
+    .caja-texto p {
+        margin: 10px;
+        color: rgb(211, 211, 211);
+    }
+
+
+    .caja-canciones {
+        padding: 30px;       
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;       
+    }
+
+    .caja-canciones iframe {
+        width: 100%;
+        height: 80px;
+        border-radius: 12px;
+    }
+
+    .indice-playlist ul li a {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 400;
+        border-radius: 30px;
+        padding: 3% 6%; 
+        border-style: solid;
+        border-width: 1Px;
+        transition: all 0.5s ease;          
+    }
+
+    .indice-playlist ul li a:hover {
+        background-color: rgb(23, 139, 23);
+        border-color: white; 
+        text-shadow: 3px 3px 3px black;
+        padding:4% 7%;   
+    }
+
+
+    .indice-playlist ul li { 
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .indice-playlist ul {
+        display: grid; 
+        grid-template-columns: repeat(1, 100%);
+        justify-content: center;
+        grid-column-gap: 30px;
+    }
+
+
+    .texto-canciones {
+        text-align: center;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 18px;
+        margin: 20px;
+        margin-top: 0px;
+        padding: 2%;
+    }
+
+
+    /************* FOOTER *****************/
+
+    /* ETIQUETAS*/
+
+    footer {        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        grid-area: footer;
+        display: grid;
+        grid-template-areas: 
+        "volver"
+        "menu"
+        "redes";
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 80% 10%;
+        grid-row-gap: 20px;
+    }
+
+
+    /* CLASES */
+
+    .volver-arriba {
+        display: flex;
+        justify-content: center;
+        grid-area: volver;
+    }
+
+    .volver-arriba a {
+        color: white;
+        font-weight: 200;
+        font-size: 13px;       
+    }
+
+    .volver-arriba a:hover {
+        color: black; 
+    }
+
+
+    .redes-footer {
+        grid-area: redes;
+        display: flex;
+        justify-content:center;
+    }
+
+    .redes-footer a {
+        margin: 10px;
+    }
+
+    .navegador-footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        grid-area: menu;        
+    }
+
+    .navegador-footer span a {
+        color: white;
+        font-weight: 100;
+        font-size: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+          
+    }
+
+    .navegador-footer span a:hover {
+        color: orangered;
+    }
+}
