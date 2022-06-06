@@ -204,7 +204,7 @@ main {
     font-size: 23px;
     text-align: justify;
     letter-spacing:1.5px; 
-    line-height: 37px;
+    line-height: 35px;
     padding-left: 20px;
     color: rgb(224, 224, 224);
     grid-area: texto-promocion;    
@@ -266,7 +266,7 @@ main {
     font-size: 23px;
     text-align: justify;
     letter-spacing:1.5px; 
-    line-height: 37px;
+    line-height: 35px;
     padding-right: 20px;
     color: rgb(224, 224, 224);
     grid-area: texto-curador;
@@ -505,7 +505,7 @@ footer {
     .texto-promocion {
         font-size: 18px;
         letter-spacing:1px; 
-        line-height: 30px;       
+        line-height: 28px;       
     }
 
     .enviar-dos {
@@ -543,7 +543,7 @@ footer {
     .texto-curador {       
         font-size: 18px;        
         letter-spacing:1px; 
-        line-height: 30px;    
+        line-height: 28px;    
     }
 }    
 
@@ -591,6 +591,52 @@ footer {
 
     .main-inicio P {
         font-size: 22px;      
+    }
+
+    .main-servicios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30vh 40vh 20vh 40vh 40vh;
+        margin: 5% 5%;        
+    }
+
+    .titulo-promocion {
+        font-size:55px;      
+    }
+
+    .texto-promocion {
+        font-size: 15px;
+        letter-spacing:1px; 
+        line-height: 23px;       
+    }
+
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .enviar-dos a {
+        padding: 3%;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    .enviar-dos a:hover {
+        padding: 4%;
+        font-size: 1.4rem; 
+    }
+
+    .titulo-curador {
+        font-size: 50px;  
+    }
+
+    .texto-curador {       
+        font-size: 15px;        
+        letter-spacing:1px; 
+        line-height: 23px;    
     }
 
     .main-canciones h2 {
@@ -696,6 +742,55 @@ footer {
 
     .main-inicio P {
         font-size: 20px;   
+    }
+
+    .main-servicios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25vh 35vh 20vh 40vh 40vh;
+        margin: 5% 5%;        
+    }
+
+    .titulo-promocion {
+        font-size:35px;      
+    }
+
+    .texto-promocion {
+        text-align: left;
+        font-size: 11px;
+        letter-spacing:1px; 
+        line-height: 16px;       
+    }
+
+    .enviar-dos {
+        grid-area: enviar-dos;
+        background-color: #633ea3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .enviar-dos a {
+        padding: 3%;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    .enviar-dos a:hover {
+        padding: 4%;
+        font-size: 1.4rem; 
+    }
+
+    .titulo-curador {
+        font-size: 35px;  
+    }
+
+    .texto-curador { 
+        text-align: right;      
+        font-size: 11px;        
+        letter-spacing:1px; 
+        line-height: 16px;
+        justify-content: center;    
     }
 
     .main-playlist {
