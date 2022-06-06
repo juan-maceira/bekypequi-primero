@@ -138,6 +138,7 @@ h2 {
 
 main {
     grid-area: main;
+    margin-bottom: 40px;
 }
 
 .main-inicio {
@@ -178,7 +179,7 @@ main {
     "texto-curador titulo-curador"
     "texto-curador imagen-curador";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh 50vh 20vh 55vh 50vh;
+    grid-template-rows: auto auto 30vh auto auto;
     margin-left: 5%;
     margin-right: 5%;         
 }
@@ -193,7 +194,8 @@ main {
     grid-area: titulo-promocion;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;      
+    justify-content: flex-end;
+    line-height: 100px;      
 }
 
 .texto-promocion {
@@ -226,7 +228,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
     justify-content:center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .enviar-dos a {
@@ -253,11 +255,16 @@ main {
     grid-area: titulo-curador;
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-end;   
+    align-items:flex-end;
+    line-height: 110px;   
 }
 
 .imagen-curador {
     grid-area: imagen-curador;
+    display: flex;
+}
+
+.imagen-curador img {
     width: 100%;
 }
 
@@ -484,12 +491,13 @@ footer {
     
     .main-servicios {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 30vh 40vh 20vh 40vh 40vh;
+        grid-template-rows: auto auto 30vh auto auto;
         margin: 5% 5%;        
     }
 
     .titulo-promocion {
-        font-size:65px;      
+        font-size:65px;
+        line-height: 90px;      
     }
 
     .texto-promocion {
@@ -527,7 +535,8 @@ footer {
     }
 
     .titulo-curador {
-        font-size: 60px;  
+        font-size: 60px; 
+        line-height: 90px; 
     }
 
     .texto-curador {       
@@ -585,12 +594,13 @@ footer {
 
     .main-servicios {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 30vh 40vh 20vh 40vh 40vh;
+        grid-template-rows: auto auto 20vh auto auto
         margin: 5% 5%;        
     }
 
     .titulo-promocion {
-        font-size:55px;      
+        font-size:55px;
+        line-height: 70px;      
     }
 
     .texto-promocion {
@@ -620,7 +630,8 @@ footer {
     }
 
     .titulo-curador {
-        font-size: 50px;  
+        font-size: 50px;
+        line-height: 70px;  
     }
 
     .texto-curador {       
@@ -736,19 +747,20 @@ footer {
 
     .main-servicios {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 25vh 35vh 20vh 40vh 40vh;
+        grid-template-rows: auto auto 20vh auto auto;
         margin: 5% 5%;        
     }
 
     .titulo-promocion {
-        font-size:35px;      
+        font-size:35px;
+        line-height: 50px;      
     }
 
     .texto-promocion {
-        text-align: left;
+        text-align: justify;
         font-size: 11px;
         letter-spacing:1px; 
-        line-height: 16px;       
+        line-height: 13px;       
     }
 
     .enviar-dos {
@@ -772,14 +784,15 @@ footer {
     }
 
     .titulo-curador {
-        font-size: 35px;  
+        font-size: 35px;
+        line-height: 50px;   
     }
 
     .texto-curador { 
-        text-align: right;      
+        text-align: justify;      
         font-size: 11px;        
         letter-spacing:1px; 
-        line-height: 16px;
+        line-height: 13px;
         justify-content: center;    
     }
 
