@@ -201,10 +201,10 @@ main {
     flex-direction: column;
     justify-content:flex-end;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 22px;
     text-align: justify;
     letter-spacing:1.5px; 
-    line-height: 35px;
+    line-height: 32px;
     padding-left: 20px;
     color: rgb(224, 224, 224);
     grid-area: texto-promocion;    
@@ -266,7 +266,7 @@ main {
     font-size: 23px;
     text-align: justify;
     letter-spacing:1.5px; 
-    line-height: 35px;
+    line-height: 33px;
     padding-right: 20px;
     color: rgb(224, 224, 224);
     grid-area: texto-curador;
@@ -493,9 +493,9 @@ footer {
     }
 
     .texto-promocion {
-        font-size: 18px;
+        font-size: 17px;
         letter-spacing:1px; 
-        line-height: 28px;       
+        line-height: 26px;       
     }
 
     .enviar-dos {
@@ -596,7 +596,7 @@ footer {
     .texto-promocion {
         font-size: 15px;
         letter-spacing:1px; 
-        line-height: 23px;       
+        line-height: 21px;       
     }
 
     .enviar-dos {
