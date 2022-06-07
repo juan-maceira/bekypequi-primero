@@ -510,6 +510,19 @@ footer {
     .navegador ul li {
         margin: 3%;   
     }
+
+    .main-nosotros h2{
+        text-align: left;
+        font-size: 80px;
+        font-weight: 400;    
+    }
+    
+    .texto-nosotros {
+        margin-top: 30px;
+        font-size: 25px;
+        letter-spacing:1.3px; 
+        line-height: 40px;
+    }
     
     .main-servicios {
         grid-template-columns: 1fr 1fr;
@@ -616,6 +629,19 @@ footer {
 
     .main-inicio P {
         font-size: 22px;      
+    }
+
+    .main-nosotros h2{
+        text-align: left;
+        font-size: 60px;
+        font-weight: 400;    
+    }
+    
+    .texto-nosotros {
+        margin-top: 30px;
+        font-size: 20px;
+        letter-spacing:1.3px; 
+        line-height: 30px;
     }
 
     .main-servicios {
@@ -769,6 +795,23 @@ footer {
 
     .main-inicio P {
         font-size: 20px;   
+    }
+
+    .main-nosotros h2{
+        text-align: left;
+        font-size: 40px;
+        font-weight: 400;    
+    }
+    
+    .texto-nosotros {
+        margin-top: 30px;
+        font-size: 17px;
+        letter-spacing:1.3px; 
+        line-height: 25px;
+    }
+
+    .texto-nosotros p {
+        margin-bottom: 10px;
     }
 
     .main-servicios {
@@ -974,6 +1017,27 @@ footer {
         padding-left: 15px;
         padding-right: 15px;
         font-size: 17px;    
+    }
+
+    .main-nosotros {
+        margin: 5% 10%;
+    }
+
+    .main-nosotros h2{
+        text-align: left;
+        font-size: 30px;
+        font-weight: 400;    
+    }
+    
+    .texto-nosotros {
+        margin-top: 30px;
+        font-size: 15px;
+        letter-spacing:1.3px; 
+        line-height: 25px;
+    }
+
+    .texto-nosotros p {
+        margin-bottom: 10px;
     }
 
     .main-servicios {
