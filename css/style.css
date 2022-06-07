@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;900&family=Roboto:ital,wght@0,300;0,700;0,900;1,100&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -27,8 +28,11 @@ body {
     grid-area: enviar;
     display: flex;
     flex-wrap: nowrap;
-    justify-content:center;
+    justify-content:left;
     align-items: center;
+    padding-left: 2%;
+    
+    
 }
 
 .enviar a {
@@ -115,6 +119,7 @@ h1 {
     font-size:60px;     
 }
 
+
 h2 {
     text-align: center;
     font-weight: 300;
@@ -166,14 +171,25 @@ main {
 }
 
 .main-nosotros { 
-    margin: 5% 10%;
+    margin: 5% 15%;
 }
 
 .main-nosotros h2{
     text-align: left;
-    font-size: 80px;
-    padding-top: 30px;
+    font-size: 100px;
     font-weight: 400;    
+}
+
+.texto-nosotros {
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 30px;
+    letter-spacing:1.3px; 
+    line-height: 45px;
+}
+
+.texto-nosotros p {
+    margin-bottom: 20px;
 }
 
 .main-servicios {
@@ -293,6 +309,7 @@ main {
     background-size: 80%;
     background-attachment: fixed;
     margin-bottom: 7%;
+    margin-top: 50px;
 }
 
 .main-playlist h2{
@@ -307,9 +324,6 @@ main {
     margin-bottom: 7%;
 }
 
-.texto-img-canciones {
-    display: flex;
-}
 
 .main-contacto h2 {
     font-size: 40Px;
@@ -360,7 +374,6 @@ main {
     color: white;
 }
 
-
 .caja-canciones {
     padding: 30px;    
     display: grid;
@@ -374,13 +387,8 @@ main {
     width: 100%;
     height: 45vh;
     border-radius: 12px;
-    transition: width 0.5s, height 0.5s;
 }
 
-.caja-canciones iframe:hover {
-    width: 103%;
-    height: 47vh;
-}
 
 .indice-playlist ul li a {
     color: white;
@@ -581,6 +589,10 @@ footer {
         "footer";
         grid-template-columns: 1fr;
         grid-template-rows: 15vh 15vh 70vh auto 25vh; 
+    }
+
+    .enviar {
+        justify-content: center;
     }
 
     .enviar a {
